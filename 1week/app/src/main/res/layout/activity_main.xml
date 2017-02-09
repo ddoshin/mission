@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dohun.test.MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/Layout1">
+        <TextView
+            android:text="자기소개 페이지"
+            android:textSize="35dp"
+            android:gravity="center"
+            android:background="#3f51"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/text1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:orientation="horizontal"
+        android:id="@+id/Layout2"
+        android:background="#FFC">
+        <LinearLayout
+            android:layout_width="218dp"
+            android:layout_height="170dp"
+            android:layout_weight="1"
+            android:id="@+id/Layout3">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/abc"
+                android:scaleType="fitXY"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="130dp"
+            android:layout_weight="1"
+            android:id="@+id/Layout4">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="이름   황도훈\n나이   24\n학교   상명대학교\n지원분야   개발A"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:background="@android:color/holo_orange_light"
+                android:id="@+id/text2"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cde"/>
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="45dp"
+            android:text="클릭!!"
+            android:textSize="18dp"
+            android:textColor="#ffff"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/black"
+            android:id="@+id/Btn"/>
+    </RelativeLayout>
+</LinearLayout>
+
+
